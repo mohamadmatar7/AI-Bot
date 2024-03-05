@@ -3,7 +3,7 @@
 // // Create an instance of the OpenAI class
 
 // const openAi = new OpenAI({
-//     apiKey: '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',
+//     apiKey: '',
 // });
 
 // const response = await openAi.chat.completions.create({
@@ -32,7 +32,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 const openAi = new OpenAI({
-    apiKey: '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',
+    apiKey: 'your_key_here',
 });
 
 app.post('/ask', async (req, res) => {
